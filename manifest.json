@@ -1,0 +1,20 @@
+{
+  "name": "iRANCOiN Auto Trading Bot & Best Crypto, Forex, BinaryOption trading Signals",
+  "short_name": "iRANCOiN",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#641E16",
+  "theme_color": "#FFC300",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "iRANCOiN/logo",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo.png",
+      "type": "iRANCOiN/logo",
+      "sizes": "512x512"
+    }
+  ]
+}
