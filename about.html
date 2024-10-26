@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه معرفی اپلیکیشن</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link rel="stylesheet" href="./navbar.css">
+    <style>
+        /* گرادیانت متحرک پس‌زمینه */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(-45deg, #0b0b0d, #2e1b18, #4a164e, #2e0b52, #670d20, #8d0e35, #ffcf00, #d4af37);
+            background-size: 200% 200%;
+            animation: gradientAnimation 5s ease infinite;
+            font-family: 'Amiri', sans-serif;
+            color: #dcdcdc;
+            text-align: center;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* تنظیمات فونت‌ها */
+        @font-face {
+            font-family: 'AmiriTitle';
+            src: url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Vazirmatn:wght@400;700&display=swap') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'AmiriText';
+            src: url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Vazirmatn:wght@400;700&display=swap') format('woff2');
+        }
+
+        /* تنظیمات متن و عناوین */
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            color: #228b22;
+            font-family: 'IranSansTitle';
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #228b22;
+            font-family: 'IranSansTitle';
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        p, li {
+            font-family: 'IranSansText';
+            font-size: 18px;
+            line-height: 1.8;
+            color: #d3d3d3;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-box p, .contact-box strong {
+            font-family: 'IranSansText';
+            font-size: 16px;
+            color: #d3d3d3;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    min-height: 100vh;
+    padding-bottom: 100px; /* فضای خالی برای نو بار */
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 1%;
+    left: 2%;
+    right: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: none;
+}
+
+.nav-icon {
+    width: 90px;
+    height: 90px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-icon i {
+    font-size: 24px;
+    color: black;
+}
+
+.nav-icon.active {
+    background-color: red;
+    border-radius: 50%;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-icon:hover {
+    transform: scale(1.1);
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>با اپلیکیشن ما، وارد دنیای معامله‌گری هوشمند شوید</h1>
+    <p>
+      اولین اپلیکیشن با ربات‌های هوشمند در بازارهای کریپتو و فارکس، که بدون نیاز به تحلیل‌های پیچیده، در هر زمان و مکان سودآوری شما را تضمین می‌کند.
+        این ربات‌ها با استفاده از الگوریتم‌های پیشرفته و تحلیل‌های لحظه‌ای، همه کارها را برای شما انجام می‌دهند
+    </p>
+
+    <h2>درباره ما</h2>
+    <p>
+        ما تیمی از متخصصان مالی و توسعه‌دهندگان هوش مصنوعی هستیم که با هدف ساده‌سازی و دسترسی آسان به معاملات هوشمند در بازارهای مالی، این اپلیکیشن را ایجاد کردیم
+        با تمرکز بر الگوریتم‌های پیشرفته و تحلیل‌های سریع، هدف ما کمک به شما برای کاهش ریسک و افزایش سود است
+    </p>
+
+    <h2>ترید هوشمند با ربات‌های پیشرفته</h2>
+    <p>
+        مدیریت ریسک، افزایش سود
+        <br>
+        با استفاده از الگوریتم‌های قدرتمند و هوش مصنوعی، به راحتی معاملات خود را مدیریت کنید و سود خود را افزایش دهید
+    </p>
+
+    <p>
+        اپلیکیشن ما اولین پلتفرم جهانی برای معاملات هوشمند در بازارهای کریپتو و فارکس است که با بهره‌گیری از ربات‌های معاملاتی قدرتمند، تحلیل‌های تکنیکال و فاندامنتال را در کسری از ثانیه انجام می‌دهد
+    </p>
+
+    <h2>ویژگی‌ها</h2>
+    <ul>
+        <li>پیشرفت در تحلیل الگوریتمی: سریع‌ترین تحلیل‌های بازار برای شناسایی بهترین فرصت‌های معاملاتی</li>
+        <li>بدون دخالت احساسات: تصمیم‌گیری‌های فقط بر اساس داده‌ها و منطق</li>
+        <li>مدیریت ریسک پیشرفته: تنظیم لحظه‌ای سطوح سود و ضرر برای بهینه‌سازی معاملات</li>
+        <li>پشتیبانی از بازارهای جهانی: دسترسی به گستره‌ای از ارزهای دیجیتال و جفت ارزهای فارکس</li>
+    </ul>
+
+    <div class="contact-box">
+        <h2>تماس با ما</h2>
+        <p><strong>آدرس:</strong> خوزستان، اهواز، کیانپارس، خیابان پهلوان، انجمن تخصصی ایران‌کوین</p>
+        <p><strong>تلفن تماس:</strong> ۰۹۳۹۳۶۳۲۵۳۷ دکتر خانی</p>
+        <p><strong>تلفن تماس:</strong> ۰۹۰۲۳۱۳۶۴۰۲ مهندس خزاعل</p>
+        <p>forexcryptobinaryindicator@gmail.com</p>
+    </div>
+</div>
+<div class="bottom-nav">
+      <div class="nav-icon" id="fire" onclick="window.location.href='activation.html'">
+        <i class="fas fa-fire"></i>
+      </div>
+      <div class="nav-icon active" id="phone" onclick="window.location.href='about.html'">
+        <i class="fas fa-phone"></i>
+      </div>
+      <div class="nav-icon" id="home" onclick="window.location.href='iRANCOiN.html'">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="nav-icon" id="store" onclick="window.location.href='store.html'">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="nav-icon" id="portfolio" onclick="window.location.href='gallary.html'">
+        <i class="fas fa-image"></i>
+      </div>
+    </div>
+    <script src="navbar.js"></script>
+</body>
+</html>

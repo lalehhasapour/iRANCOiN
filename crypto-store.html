@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اشتراک ربات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link rel="stylesheet" href="./navbar.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://raw.githubusercontent.com/lalehhasapour/My-App-Images/refs/heads/main/1726449357250_938d2a08a8968eb49443a259dc589cca_2_3_photo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            direction: rtl;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            width: 70%;
+            margin: 50px auto;
+        }
+        .logo img {
+            max-width: 200px;
+            height: auto;
+        }
+        .content {
+            font-size: 18px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        .content::before {
+            content: "\2022"; /* دایره توپر */
+            font-size: 24px;
+            margin-left: 10px;
+            color: black;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+        .button {
+            display: block;
+            padding: 15px;
+            margin: 10px 0;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .button-yellow {
+            background-color: #FFD700; /* زرد قناری */
+            color: black;
+        }
+        .button-black {
+            background-color: black;
+            color: white;
+        }
+        .button-blue {
+            background-color: #87CEEB; /* آبی آسمانی */
+            color: black;
+        }
+        .content-en {
+            direction: ltr;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- لوگو -->
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/lalehhasapour/logo-images_APP/refs/heads/main/1726971218716_c7ab39c64111fc45e489d0f2b77f13f8_2_3_photo.png" alt="لوگوی اپلیکیشن">
+        </div>
+
+        <!-- توضیحات -->
+        <div class="content" lang="fa">
+            کاربر گرامی، دقت داشته باشید قبل از ورود به صفحه پرداخت حتماً وی‌پی‌ان خود را روشن کنید (فیلترشکن).
+        </div>
+        <div class="content" lang="fa">
+            لطفاً بعد از پرداخت، رسید یا هش تراکنش موفق را کپی کنید و در قسمت اشتراک ربات خریداری شده وارد نمایید.
+        </div>
+        <div class="content" lang="fa">
+            کاربر گرامی، به محض ارسال رسید تراکنش، کارشناسان ما با شما برای ادامه مسیر در ارتباط خواهند بود.
+        </div>
+        <div class="content" lang="fa">
+            کاربران عزیز، قیمت‌های کنونی تا هفته‌ی آینده شامل 90 درصد تخفیف هستند.
+        </div>
+        <!-- دکمه‌های اشتراک -->
+        <div class="button-container">
+            <a href="https://nowpayments.io/payment/?iid=5136788574" class="button button-yellow">اشتراک فیوچرز ارزهای‌دیجیتال ۱ هفته- ۱۵ تتر</a>
+            <a href="https://nowpayments.io/payment/?iid=5880250019" class="button button-black">اشتراک فیوچرز ارزهای‌دیجیتال ۱ ماه- ۵۰ تتر</a>
+        </div>
+        <div class="bottom-nav">
+          <div class="nav-icon" id="fire" onclick="window.location.href='activation.html'">
+            <i class="fas fa-fire"></i>
+          </div>
+          <div class="nav-icon" id="phone" onclick="window.location.href='about.html'">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="nav-icon" id="home" onclick="window.location.href='iRANCOiN.html'">
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="nav-icon active" id="store" onclick="window.location.href='store.html'">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="nav-icon" id="portfolio" onclick="window.location.href='gallary.html'">
+            <i class="fas fa-image"></i>
+          </div>
+        </div>
+        <script src="navbar.js"></script>
+</body>
+</html>

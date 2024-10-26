@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 1%;
+    left: 2%;
+    right: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: none;
+}
+
+.nav-icon {
+    width: 90px;
+    height: 90px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-icon i {
+    font-size: 24px;
+    color: black;
+}
+
+.nav-icon.active {
+    background-color: red;
+    border-radius: 50%;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-icon:hover {
+    transform: scale(1.1);
+}

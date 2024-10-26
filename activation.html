@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارسال تراکنش</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link rel="stylesheet" href="./navbar.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://raw.githubusercontent.com/lalehhasapour/My-App-Images/refs/heads/main/1726449267178_5c85db37594bdce93a6787dabdc142cf_2_3_photo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .container button {
+            background-color: #FFD700;
+            color: black;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background-color: #FFC107;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+    </style>
+    <script>
+        function sendEmail() {
+            var transactionLink = document.getElementById("transactionLink").value;
+            var mailtoLink = 'mailto:forexcryptobinaryindicator@gmail.com?subject=Transaction%20Link&body=' + encodeURIComponent(transactionLink);
+            window.location.href = mailtoLink;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/lalehhasapour/logo-images_APP/refs/heads/main/1726971218716_c7ab39c64111fc45e489d0f2b77f13f8_2_3_photo.png" alt="لوگو">
+        </div>
+        <h1>لطفاً رسید و یا کد تراکنش ارسالی موفق وجه را در کادر زیر وارد کنید</h1>
+        <input type="text" id="transactionLink" placeholder="لینک تراکنش خود را وارد کنید">
+        <button onclick="sendEmail()">ارسال رسید/ایجاد ثبت‌نام</button>
+    </div>
+    <div class="bottom-nav">
+      <div class="nav-icon active" id="fire" onclick="window.location.href='activation.html'">
+        <i class="fas fa-fire"></i>
+      </div>
+      <div class="nav-icon" id="phone" onclick="window.location.href='about.html'">
+        <i class="fas fa-phone"></i>
+      </div>
+      <div class="nav-icon" id="home" onclick="window.location.href='iRANCOiN.html'">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="nav-icon" id="store" onclick="window.location.href='store.html'">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="nav-icon" id="portfolio" onclick="window.location.href='gallary.html'">
+        <i class="fas fa-image"></i>
+      </div>
+    </div>
+    <script src="navbar.js"></script>
+</body>
+  </html>
